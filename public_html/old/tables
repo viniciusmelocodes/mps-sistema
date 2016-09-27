@@ -1,0 +1,61 @@
+operador -> table
+id
+login
+nome
+email
+senha
+data_criacao
+ativo
+codigo_ativacao
+level_permissao_id
+bloqueado
+
+
+level_acesso -> table
+id
+texto :: administrador | operador
+
+despesas -> table
+id
+conta
+descricao
+valor
+forma_pagamento
+comentarios
+categoria
+data
+
+
+titulos -> table
+id
+bordero
+cliente_id
+modo (cheque ou duplicada)
+valor
+status_id
+vencimento
+operacao
+comentarios
+
+
+clientes -> table
+id
+nome
+telefone
+email
+endereco
+comentarios
+data_inclusao
+
+
+titulo_status -> table
+id
+texto ::  a vencer | devolvido | pago | recomprado | vencido
+
+
+tarifas -> table
+id
+data
+conta
+descricao
+valor

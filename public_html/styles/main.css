@@ -1,0 +1,106 @@
+body{
+	background:#f2f2f2;
+    text-decoration:none;
+}
+
+/********************************************************/
+/*************************LOGIN**************************/
+/********************************************************/
+
+.form{
+	font-family: 'Open Sans Condensed', arial, sans;
+    width: 300px;
+    padding: 30px;
+    background: #fff;
+    margin: 50px auto;
+}
+
+.form img{
+	margin:20px auto;
+	float:left;
+}
+
+.form input[type="text"],
+.form input[type="password"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px 7px 7px 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 1em Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+
+.form input[type="text"]{
+    background: url("../images/user.png") no-repeat;
+    background-position: 0 5px;
+}
+.form input[type="password"]{
+    background: url("../images/lock.png") no-repeat;
+    background-position: 0 5px;
+}
+
+.form input[type="checkbox"]{
+	margin:10px 10px 20px 0;
+}
+
+.form span{
+    font: .9em Arial, Helvetica, sans-serif;
+    color:#6f7382;
+}
+
+.form input[type="submit"]{
+    background-color: #00a2d3;
+    border: 1px solid #007599;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    float:right;    
+}
+
+.form a{
+    text-decoration:none;
+    color:#00a2d3;
+    font: .8em Arial, Helvetica, sans-serif;   
+}
+
+.login-message{
+    display:none;
+}
+
+
+.top ul{
+    width:100%;
+    text-align:center;
+    background:#fff;
+}
+
+.top ul li{
+    display:inline-block;
+    margin:5px 10px;
+    background:#fff;
+    padding:5px 15px;
+}
+
+.top ul li.selected{
+    border-color:;
+    border-bottom:#000 solid 3px;
+}
+
+
+
+.content{
+    background:#fff;
+    height:500px;
+}

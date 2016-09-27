@@ -1,0 +1,32 @@
+::cadastro de usuarios
+- envio de email
+- form de ativação
+
+
+::terminar sistema de login
+- ajax
+- tela de login
+  - diminuir icons + clarear
+  - center logo
+  - errors box
+- remember function
+- tentativas (tabela + php check)
+- envio de email
+
+
+::header
+- logo
+- user info
+- options box
+
+
+::despesas
+- adicionar box
+- ajax
+- cadastrar.php
+
+
+::classes files
+- criar classes usuários
+- herdar da classe database
+
