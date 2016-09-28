@@ -10,4 +10,26 @@ $(document).ready(function(){
 	});
 
 
+	$("#btn_login").click(function(e){
+		var data = $(".form").serialize();
+		e.preventDefault();
+		console.log(data);
+
+		$.ajax({
+			type:'POST',
+			url:'login.php',
+			data:data,
+		    dataType: "html"
+
+		}).done(function(resposta) {
+		    if(resposta){
+		    	$(".login-messages").html(resposta).show('slow');
+		    }
+		});
+
+
+	});	
+
+	
+
 });

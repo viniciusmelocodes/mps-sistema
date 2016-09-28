@@ -1,3 +1,11 @@
+<?php
+
+	session_start();
+
+	if(isSet($_SESSION['']))
+
+?>
+
 <form class="form" action="criar_usuario.php" method="POST" >
 	<label for="edt_user">Usuário:</label>
 	<input type="text" name="edt_user" />

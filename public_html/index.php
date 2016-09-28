@@ -13,17 +13,25 @@
 ?>
 
 		<?php require_once "../includes/header.inc.php";?>
- 		 			
- 		<form class="form" action="login.php" method="POST" >
+		<div class="login-form">
  			<img src="images/logo.png" alt="MSP Consultoria" />
-			<input type="text" name="edt_user" placeholder="Usuário" /></br>
- 			<input type="password" name="edt_pass" placeholder="Senha" /></br>
- 			<input type="checkbox" name="chk_remember" value=1/><span>Mantenha-me conectado</span>
- 			<input type="submit" value="Autenticar" /></br>
- 			<a href="#">Recuperar senha</a>
 
-		</form>
+ 			<div class="login-messages">
+				<p></p>
+ 			</div>
 
+
+ 			<form class="form" action="login.php" method="POST" >
+ 			
+				<input type="text" name="edt_user" id="edt_user" placeholder="Usuário" /></br>
+	 			<input type="password" name="edt_pass" id="edt_pass" placeholder="Senha" /></br>
+	 			<input type="checkbox" name="chk_remember" id="chk_remember" />
+	 			<label for="chk_remember">Mantenha-me conectado</label>
+	 			<input type="submit" value="Autenticar" name="submit" id="btn_login"/></br>
+	 			<a href="#">Recuperar senha</a>
+
+			</form>
+		</div>
 		<div class="login-message">
 			
 		</div>

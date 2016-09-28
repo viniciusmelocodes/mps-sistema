@@ -1,0 +1,46 @@
+<?php
+
+/**
+*	Database
+*	Create a PDO object database connect
+*
+*	PHP version 5
+*
+*	@author Randy Soriani - randysoriani@outlook.com
+*	@version 0.1
+*	@copyright 2013 - Randy Soriani
+*	@license - http://www.opensource.org/licenses/mit-license.html  MIT License	
+*
+*/
+
+	$config = array(
+		'host' => 'localhost',
+		'database' => 'msp',
+		'user' => 'root',
+		'pass' => ''
+	);
+
+	try {
+		
+		$db = new PDO('mysql:host='.$config['host'].';dbname='.$config['database'], $config['user'], $config['pass']);
+
+	} catch (PDOException $e){
+		
+		echo 'Failed to load the database, contact the system admin.<br/';
+		echo $e->getMessage();
+
+	}
+
+
+	function user_available($login){
+			$sql = "SELECT COUNT(`id`) AS CNT FROM `users` WHERE `user`=:login";
+
+			$statement = $db->prepare($sql);
+			$statement->bindParam('login', $login, PDO::PARAM_STR);
+			$statement->execute();
+
+			$result = $statement->fetch();
+
+			return (!empty($result['CNT']))? false : true;
+		}
+?>

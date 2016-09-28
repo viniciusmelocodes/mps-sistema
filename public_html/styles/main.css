@@ -1,23 +1,21 @@
-body{
-	background:#f2f2f2;
+    body{
+	background:#3f3f3f;
     text-decoration:none;
 }
 
 /********************************************************/
 /*************************LOGIN**************************/
 /********************************************************/
-
-.form{
-	font-family: 'Open Sans Condensed', arial, sans;
-    width: 300px;
-    padding: 30px;
-    background: #fff;
-    margin: 50px auto;
+.login-form{
+    padding:15px 30px 30px 30px;
+    background:#fff;
+    width:350px;
+    margin:75px auto;
 }
 
-.form img{
-	margin:20px auto;
-	float:left;
+.login-form img{
+    display:block;
+    margin:15px auto;
 }
 
 .form input[type="text"],
@@ -25,34 +23,33 @@ body{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    outline: none;
     display: block;
     width: 100%;
-    padding: 7px 7px 7px 40px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    background: transparent;
-    margin-bottom: 10px;
+    padding: 5px 5px 5px 40px;
+    border:none;
+    border-bottom:1px solid #ddd;
     font: 1em Arial, Helvetica, sans-serif;
     height: 45px;
 }
 
 .form input[type="text"]{
-    background: url("../images/user.png") no-repeat;
-    background-position: 0 5px;
+    background:url("../images/login.png") no-repeat;
+    background-position:4px 9px;
 }
+
 .form input[type="password"]{
-    background: url("../images/lock.png") no-repeat;
-    background-position: 0 5px;
+    background: url("../images/pass.png") no-repeat;
+    background-position:2px 12px;
 }
 
 .form input[type="checkbox"]{
-	margin:10px 10px 20px 0;
+    margin:10px 10px 20px 0;
 }
 
-.form span{
+.form label{
     font: .9em Arial, Helvetica, sans-serif;
     color:#6f7382;
+    text-align:left;
 }
 
 .form input[type="submit"]{
@@ -66,18 +63,29 @@ body{
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
-    float:right;    
+    float:right;
 }
 
 .form a{
     text-decoration:none;
     color:#00a2d3;
-    font: .8em Arial, Helvetica, sans-serif;   
+    font:.8em Arial, Helvetica, sans-serif;   
 }
 
-.login-message{
+.login-messages{
     display:none;
+    background:#fa6b5b;
+    padding:10px;
+    margin:10px 0;
+    border-radius:3px;
+    font:.8em Arial, Helvetica, sans-serif;   
+    font-weight:bold;
+    color:#fff;
 }
+
+
+
+
 
 
 .top ul{

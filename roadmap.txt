@@ -1,17 +1,17 @@
-::cadastro de usuarios
-- envio de email
-- form de ativação
-
-
 ::terminar sistema de login
-- ajax
 - tela de login
-  - diminuir icons + clarear
-  - center logo
-  - errors box
+  - diminuir icons + clarear -- ok
+  - center logo -- ok
+  - errors box -- ok
+- ajax
 - remember function
 - tentativas (tabela + php check)
 - envio de email
+
+
+::cadastro de usuarios
+- envio de email
+- form de ativação
 
 
 ::header

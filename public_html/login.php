@@ -1,17 +1,19 @@
 <?php
 
 	session_start();
-	//todo:: do user session validation
 	$errors = array();
 
+	//TODO::do the remember me function validation
 
 	//validate the user name
 	if(!isSet($_POST['edt_user']) or empty($_POST['edt_user'])){
 		$errors['n_user'] = "Favor digitar o usuário";
+		echo $errors['n_user'];
 	} else 
 	//validate the password
 	if(!isSet($_POST['edt_pass']) or empty($_POST['edt_pass'])){
 		$errors['n_pass'] = "Favor digitar a senha";
+		echo $errors['n_pass'];
 	} else {
 
 		$user = $_POST['edt_user'];
@@ -38,16 +40,11 @@
 			} else {
 				//TODO:: create ativar page, with a form to insert the code and a link to send a new email
 				$errors['i_user'] = "Usuário não ativado";
-				header("location:ativar.php?id=".$result['id']);
+				echo $errors['i_user'];
 			}
 		} else {
 			$errors['w_userpass'] = "Usuário não encontrado ou senha inválida!";
-			var_dump($errors);
+			echo $errors['w_userpass'];
 		}
-
-
 	}
-
-	var_dump($errors);
-
 ?>
