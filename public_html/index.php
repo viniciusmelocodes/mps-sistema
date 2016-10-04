@@ -10,6 +10,8 @@
 		$_SESSION['user_id'] = $_COOKIE['user_id'];
 		$_SESSION['user_name'] = $_COOKIE['user_name'];
 	}
+
+	//TODO::do the remember me function validation
 ?>
 
 		<?php require_once "../includes/header.inc.php";?>
@@ -32,8 +34,5 @@
 
 			</form>
 		</div>
-		<div class="login-message">
-			
-		</div>
-
+		
 		<?php require_once "../includes/bottom.inc.php";?>

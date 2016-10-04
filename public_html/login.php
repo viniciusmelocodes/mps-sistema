@@ -3,17 +3,15 @@
 	session_start();
 	$errors = array();
 
-	//TODO::do the remember me function validation
-
 	//validate the user name
 	if(!isSet($_POST['edt_user']) or empty($_POST['edt_user'])){
 		$errors['n_user'] = "Favor digitar o usuário";
-		echo $errors['n_user'];
+		//echo $errors['n_user'];
 	} else 
 	//validate the password
 	if(!isSet($_POST['edt_pass']) or empty($_POST['edt_pass'])){
 		$errors['n_pass'] = "Favor digitar a senha";
-		echo $errors['n_pass'];
+		//echo $errors['n_pass'];
 	} else {
 
 		$user = $_POST['edt_user'];
@@ -32,10 +30,10 @@
 					$_SESSION['user_name'] = $result['nome'];
 					$_SESSION['access_level'] = $result['level_permissao_id'];
 					//TODO:: verify remember me option and set the cookies
-					header("location:sistema.php");	
+					echo "ok";
 				} else {
 					$errors['b_user'] = "Usuário bloqueado!";
-					echo $errors['b_user'];
+					//echo $errors['b_user'];
 				}
 			} else {
 				//TODO:: create ativar page, with a form to insert the code and a link to send a new email

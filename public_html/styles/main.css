@@ -84,6 +84,35 @@
 }
 
 
+/********************************************************/
+/*************************HEADER*************************/
+/********************************************************/
+.top-bg{
+    width:100%;
+    background:#fff;
+}
+
+.top{
+    width:80%;
+    margin:auto;
+}
+
+.top img{
+    margin:20px;
+}
+
+/*user menu*/
+.drop-down-menu{
+    display:none;
+}
+
+.user-info{
+    float:right;
+    display:block;
+
+}
+
+
 
 
 
@@ -91,7 +120,7 @@
 .top ul{
     width:100%;
     text-align:center;
-    background:#fff;
+    background:#3f3f3f;
 }
 
 .top ul li{
@@ -110,5 +139,4 @@
 
 .content{
     background:#fff;
-    height:500px;
 }

@@ -1,19 +1,15 @@
 $(document).ready(function(){
 
-	console.log("DOM ready");
-
-	$(".top ul li a").click(function(e){
+	$(".menu a").on('click',function(e){
 		e.preventDefault();
-		console.log("clicked");
 		var url = this.href;
         $(".content").load(url);
 	});
 
-
-	$("#btn_login").click(function(e){
+	$("#btn_login").on('click',function(e){
+		$(".login-messages").empty().hide();
 		var data = $(".form").serialize();
 		e.preventDefault();
-		console.log(data);
 
 		$.ajax({
 			type:'POST',
@@ -22,13 +18,21 @@ $(document).ready(function(){
 		    dataType: "html"
 
 		}).done(function(resposta) {
-		    if(resposta){
-		    	$(".login-messages").html(resposta).show('slow');
+		    if(resposta == "ok"){
+	    		window.location = 'sistema.php';
+	    	} else {
+		    	$(".login-messages").html(resposta).show('fast');
 		    }
 		});
 
 
 	});	
+
+
+	$(".drop-down-menu-link").on('click',function(e){
+		e.preventDefault();
+		$(".drop-down-menu").toggle("fast");
+	});
 
 	
 
