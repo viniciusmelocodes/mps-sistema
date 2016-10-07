@@ -6,13 +6,16 @@
 	//validate the user name
 	if(!isSet($_POST['edt_user']) or empty($_POST['edt_user'])){
 		$errors['n_user'] = "Favor digitar o usuário";
-		//echo $errors['n_user'];
-	} else 
+		echo $errors['n_user'];
+		return;
+	}
+
 	//validate the password
 	if(!isSet($_POST['edt_pass']) or empty($_POST['edt_pass'])){
 		$errors['n_pass'] = "Favor digitar a senha";
-		//echo $errors['n_pass'];
-	} else {
+		echo $errors['n_pass'];
+		return;
+	}
 
 		$user = $_POST['edt_user'];
 		//pass hashed
@@ -20,7 +23,6 @@
 
 		require_once "../includes/class.database.php";
 		$db = new Database();
-		
 		$result = $db->CheckLoginPass($user, $pass);
 
 		if (!$result == false){
@@ -33,16 +35,16 @@
 					echo "ok";
 				} else {
 					$errors['b_user'] = "Usuário bloqueado!";
-					//echo $errors['b_user'];
+					echo $errors['b_user'];
 				}
 			} else {
 				//TODO:: create ativar page, with a form to insert the code and a link to send a new email
-				$errors['i_user'] = "Usuário não ativado";
+				$errors['i_user'] = "Usuário não ativado.";
 				echo $errors['i_user'];
 			}
 		} else {
 			$errors['w_userpass'] = "Usuário não encontrado ou senha inválida!";
 			echo $errors['w_userpass'];
 		}
-	}
+
 ?>

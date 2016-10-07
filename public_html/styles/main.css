@@ -1,6 +1,7 @@
     body{
 	background:#3f3f3f;
     text-decoration:none;
+    font:.9em Arial, Helvetica, sans-serif;  
 }
 
 /********************************************************/
@@ -87,56 +88,143 @@
 /********************************************************/
 /*************************HEADER*************************/
 /********************************************************/
-.top-bg{
+/*.top h1{
+    color:#fff;
+    font:1.6em Arial, Helvetica, sans-serif;
+    display:inline;
+    margin:1.6% 0 0 5%;
+    background:#679299;
     width:100%;
-    background:#fff;
 }
 
+.top nav{
+    float:left;
+    background:#f67e93;
+    margin:1% auto;
+    
+}
+
+.top nav ul li{
+    display:inline-block;
+    font-size:1.2em;
+    padding:10px;
+}
+
+.top nav a{
+    color:#fff;
+}
+
+.logged-user{
+    float:right;
+    border:1px solid #fff;
+    padding:10px 20px;
+    border-radius:10px;
+    margin:1% 5% 1% 0;
+}*/
+
 .top{
-    width:80%;
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.top a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.top h1{
+    display:inline-block;
+    float:left;
+    margin:1.6% 0 0 5%;
+    color:#fff;
+    font:1.6em Arial, Helvetica, sans-serif;
+}
+
+.top nav{
+    width:58%;
+    margin:1% auto;
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.top nav a{
+    color:#aaa;
+}
+
+.selected{
+    color:#fff;
+    border-bottom:4px solid #00a2d3; /*#8150c3;*/
+}
+
+.top nav ul li{
+    display:inline-block;
+    padding:10px;
+}
+
+.logged-user{
+    float:right;
+    display:inline-block;
+    border:1px solid #fff;
+    padding:5px 10px;
+    border-radius:10px;
+    margin:1.3% 5% 1% 0;
+    font:.8em;
+}
+
+.logged-user span{
+    font:1em;
+    font-weight:bold;
+}
+
+.drop-down-menu{
+    display:none;
+
+}
+
+
+/********************************************************/
+/*************************CONTENT************************/
+/********************************************************/
+.container{
+    background:#fff;
+    min-height:300px;
+}
+
+.content{
+    padding:2% 0;
+    width:85%;
     margin:auto;
 }
 
-.top img{
-    margin:20px;
+
+
+/********************************************************/
+/*************************DESPESAS***********************/
+/********************************************************/
+
+.table{
+    margin:2% auto;
 }
 
-/*user menu*/
-.drop-down-menu{
-    display:none;
+table th{
+    padding:5px;
+    background:#00a2d3;
+    border:1px solid #fff;
+    color:#fff;
+    font-weight:bold;
+    font-size:1em;
 }
 
-.user-info{
-    float:right;
-    display:block;
-
+table tr:nth-child(odd){
+    background:#E7F2F6;
 }
 
-
-
-
-
-
-.top ul{
-    width:100%;
-    text-align:center;
-    background:#3f3f3f;
-}
-
-.top ul li{
-    display:inline-block;
-    margin:5px 10px;
-    background:#fff;
-    padding:5px 15px;
-}
-
-.top ul li.selected{
-    border-color:;
-    border-bottom:#000 solid 3px;
+table td{
+    padding:4px 10px;
+    border-right:1px solid #fff;
 }
 
 
 
-.content{
-    background:#fff;
-}

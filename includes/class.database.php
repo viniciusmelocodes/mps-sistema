@@ -6,7 +6,7 @@
 			'host' => 'localhost',
 			'database' => 'msp',
 			'user' => 'root',
-			'pass' => ''
+			'pass' => 'root'
 			);
 
 

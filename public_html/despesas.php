@@ -30,28 +30,27 @@
 <div class="table-filter">
 </div>
 
-<table>
-	<tr>
-		<th>Conta</th>
-		<th>Descrição</th>
-		<th>Valor</th>
-		<th>Forma de pagamento</th>
-		<th>Comentários</th>
-		<th>Categoria</th>
-		<th>Data</th>
-	</tr>
-	<?php foreach($result as $rst){ ?>
-	<tr>
-		<td><?php echo $rst['conta'];?></td>
-		<td><?php echo $rst['descricao'];?></td>
-		<td><?php echo $rst['valor'];?></td>
-		<td><?php echo $rst['forma_pagamento'];?></td>
-		<td><?php echo $rst['comentarios'];?></td>
-		<td><?php echo $rst['titulo'];?></td>
-		<td><?php echo $rst['data'];?></td>
-	</tr>
-	<?php }?>
-</table>
-
-
-
+<div class="table">
+	<table>
+		<tr>
+			<th>Conta</th>
+			<th>Descrição</th>
+			<th>Valor</th>
+			<th>Forma de pagamento</th>
+			<th>Comentários</th>
+			<th>Categoria</th>
+			<th>Data</th>
+		</tr>
+		<?php foreach($result as $rst){ ?>
+		<tr>
+			<td><?php echo $rst['conta'];?></td>
+			<td><?php echo $rst['descricao'];?></td>
+			<td><?php echo $rst['valor'];?></td>
+			<td><?php echo $rst['forma_pagamento'];?></td>
+			<td><?php echo $rst['comentarios'];?></td>
+			<td><?php echo $rst['titulo'];?></td>
+			<td><?php echo $rst['data'];?></td>
+		</tr>
+		<?php }?>
+	</table>
+</div>

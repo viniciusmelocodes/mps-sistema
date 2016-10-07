@@ -2,7 +2,19 @@
 
 	session_start();
 
-	if(isSet($_SESSION['']))
+	if(!isSet($_SESSION['user_id']) OR !isSet($_SESSION['user_name']) OR !isSet($_SESSION['access_level'])){
+		header("location:erro.php?e=s_unset");
+	}
+
+	if($_SESSION['access_level'] != 0){
+		header("location:erro.php?e=u_noacess");	
+	} else {
+
+	}
+	
+
+
+
 
 ?>
 

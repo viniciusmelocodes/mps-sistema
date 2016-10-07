@@ -1,0 +1,22 @@
+Sistema de logs para o webapp MPS Consultoria
+Arquivo gerado automaticamente. Não editar esse arquivo.
+Tue, 04 Oct 2016 23:20:14 +0000[ERROR] - DATABASE CONNECTION exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\Temp\UwAmp\www\msp\includes\class.database.php:23
+Stack trace:
+#0 C:\Temp\UwAmp\www\msp\includes\class.database.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\Temp\UwAmp\www\msp\public_html\login.php(22): Database->__construct()
+#2 {main} 
+Tue, 04 Oct 2016 23:20:23 +0000[ERROR] - DATABASE CONNECTION exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\Temp\UwAmp\www\msp\includes\class.database.php:23
+Stack trace:
+#0 C:\Temp\UwAmp\www\msp\includes\class.database.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\Temp\UwAmp\www\msp\public_html\login.php(22): Database->__construct()
+#2 {main} 
+Tue, 04 Oct 2016 23:20:25 +0000[ERROR] - DATABASE CONNECTION exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\Temp\UwAmp\www\msp\includes\class.database.php:23
+Stack trace:
+#0 C:\Temp\UwAmp\www\msp\includes\class.database.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\Temp\UwAmp\www\msp\public_html\login.php(22): Database->__construct()
+#2 {main} 
+Tue, 04 Oct 2016 23:20:25 +0000[ERROR] - DATABASE CONNECTION exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\Temp\UwAmp\www\msp\includes\class.database.php:23
+Stack trace:
+#0 C:\Temp\UwAmp\www\msp\includes\class.database.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\Temp\UwAmp\www\msp\public_html\login.php(22): Database->__construct()
+#2 {main} 
