@@ -142,6 +142,7 @@
 }
 
 .top nav{
+    float:left;
     width:58%;
     margin:1% auto;
     float:none;

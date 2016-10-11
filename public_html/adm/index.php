@@ -7,7 +7,7 @@
 	}
 
 	if($_SESSION['access_level'] != 0){
-		header("location:erro.php?e=u_noacess");	
+		header("location:erro.php?e=u_noaccess");	
 	} else {
 
 	}

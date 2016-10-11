@@ -4,6 +4,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		var url = this.href;
         $(".content").load(url);
+        $("nav ul li").each(function(){
+        	$(this).removeClass("selected");
+        });
+        $(this > "li").addClass("selected");
 	});
 
 	$("#btn_login").on('click',function(e){
@@ -32,7 +36,5 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(".drop-down-menu").toggle("fast");
 	});
-
-	
 
 });
